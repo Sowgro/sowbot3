@@ -6,7 +6,7 @@ module.exports = {
 		.setDescription('Only you can see this!')
         .addStringOption(option =>
             option.setName('command')
-                .setDescription('Name of the command to display')
+                .setDescription('Name of the command to preview')
                 .setRequired(true)
                 .addChoices(...global.data.getList())
                 ),    

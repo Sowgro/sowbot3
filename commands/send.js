@@ -2,11 +2,11 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('use')
-		.setDescription('Use a Command')
+		.setName('send')
+		.setDescription('Send a command')
         .addStringOption(option =>
             option.setName('command')
-                .setDescription('What the bot will send')
+                .setDescription('Name of the command to send')
                 .setRequired(true)
                 .addChoices(...global.data.getList())
                 ),
